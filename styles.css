@@ -67,7 +67,7 @@ html{
 .footer-box{
     height: auto;
     /* background-color: var(--color1); */
-    box-shadow: 1px 0px 10px .3px var(--color3);
+    box-shadow: 1px 0px 10px .3px black;
     padding: 10px;
 }
 
