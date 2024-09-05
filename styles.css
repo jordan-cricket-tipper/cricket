@@ -7,21 +7,18 @@
     --color1:#17153B;
     --color4:#45474B;
     --color3:#FFFBE6;
-    --color2:#F4CE14;
+    --color2:#06889c;
 }
  html,body{
     height:100vh;
-   
-}
+    background-color: red;
+  
+} 
 html{
-    background-position: center;
-    background-image:url(background.jpg); 
-    background-size: cover;
+    background-image:linear-gradient(to top left,red,red,red,var(--color3));
     background-repeat: no-repeat;
 }
-html{
-    background-color: var(--color2);
-}
+
 .main-box{
    padding:20px 10px;
 }
@@ -29,7 +26,7 @@ html{
     cursor: pointer;
     transition: .2s;
     padding: 12px 24px;
-    background-image: linear-gradient(to top,var(--color4),var(--color4),var(--color4),var(--color3));
+    background-image: linear-gradient(to top,var(--color2),var(--color2),var(--color2),var(--color3));
 }
 .button1:active{
     transform: scale(1.2);
@@ -69,7 +66,7 @@ html{
 /*footer box*/
 .footer-box{
     height: auto;
-    background-color: var(--color1);
+    /* background-color: var(--color1); */
     box-shadow: 1px 0px 10px .3px var(--color3);
     padding: 10px;
 }
@@ -98,7 +95,7 @@ transform: scale(.8);
 
     @media (max-width:800px) {
        .h1{
-        font-size:xx-large;
+        font-size:x-large;
        }
        .h2{
 font-size: large;
@@ -140,6 +137,4 @@ font-size: small;
         }
  
      }
-     .footer{
-        background-image: linear-gradient(to top,var(--color2),var(--color2),var(--color3),var(--color3));
-     }
+     
