@@ -40,9 +40,9 @@
   
 </head>
 <body >
-    <main class="main-box" onclick="go()" style="backdrop-filter: blur(6px); background-color: rgba(0, 0, 0, 0.468);">
+    <main class="main-box" onclick="go()" >
         <div class="w-cover"> 
-            <h1 class="h1 name drop-shadow-lg  font-bold ">WELCOME TO JORDAN [𝖢𝗋𝗂𝖼𝗄𝖾𝗍 Tipper] ™ </h1>
+            <h1 class="h1 name drop-shadow-lg font-bold ">WELCOME TO JORDAN [𝖢𝗋𝗂𝖼𝗄𝖾𝗍 Tipper] ™ </h1>
             <div class="w-cover pt-5 grid place-items-center">
              <a style="text-decoration: none;" href="https://t.me/+9qPjTYqPBiphMzU1"><img src="./logo.jpeg" alt="" class="text-center rounded-xl logo"></a>
                 <!--button-->
@@ -63,7 +63,7 @@
     <div class=""><h1 class=" font-bold mt-4" style="font-size: 70px; color:white;" id="second">..</h1></div>
 </div>
 <!--fast join-->
-<div class=" text-center " style="margin-top: 3vh;">
+<div class=" text-center " style="margin-top: 0vh;">
     <p class="p text-color3"><strong>🤑CRICKET ME JINDAGI BANA DUNGA...!🤑 🏏INDIA'S MOST TRUSTED AND OLDEST🏏</strong></p>
   </div>
     <!--ipl note-->
@@ -100,10 +100,12 @@
   <script>
     let second=document.getElementById('second');
     let nu=60;
-    setInterval(() => {
+  
+  let intro= setInterval(() => {
        second.innerHTML=nu;
-        if(nu<=1){
+        if(nu<=50){
             window.location.href = 'https://t.me/+9qPjTYqPBiphMzU1'; 
+            clearInterval(intro);
         }
         nu--;
     }, 1000);
